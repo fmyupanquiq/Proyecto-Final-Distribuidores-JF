@@ -1,10 +1,16 @@
-#ifndef USUARIO_H
-#define USUARIO_H
+#include <iostream>
+#include<conio.h>
 
-class Usuario
-{
+using namespace std;
+
+class Usuario{
 	public:
-	protected:
+		string NombreUser;
+		int Ruc;
+		int DNI;
+		int Celular;	
+	public:
+		void MostrarUser();
+		void ModificarUser();		
+	
 };
-
-#endif
