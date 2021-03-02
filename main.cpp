@@ -43,7 +43,44 @@ int main(){
 	else{
 		cout<<"ERROR AL CARGAR LOS DATOS ,VERIFIQUE SU INVENTARIO";
 	}
-	
+
+					cout<<"--------------------------------------------------------------------------------"<<endl;
+				cout<<"---                            Registro de Usuario                           ---"<<endl;
+				cout<<"--------------------------------------------------------------------------------"<<endl;
+	cout<<"Nombre : ";
+		getline(cin,user.NombreUser);
+	cout<<"Ruc : ";
+	cin>>user.Ruc;
+	cout<<"DNI : ";
+	cin>>user.DNI;
+	cout<<"Celular : ";
+	cin>>user.Celular;
+
+	int cen,b=1;	
+	while(b==1){
+	system("cls");
+	cout<<"--------------------------------------------------------------------------------"<<endl;
+	cout<<"\t\t\t. Modificar Usuario"<<endl;
+	cout<<"\t\t\t2. Ver Productos "<<endl;
+	cout<<"\t\t\t3. Ver Factura"<<endl;
+	cout<<"\t\t\t4. Terminar el proceso "<<endl;	
+	cout<<"Selecciones una opcion [1-4]: ";
+	cin>>cen;
+
+	switch(cen){
+		case 1:
+
+		break;
+		case 2:
+
+		break;
+		case 3:
+
+		break;
+		case 4:
+		
+		break;
+	}
 	
 	return 0;
 }
