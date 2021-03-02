@@ -1,10 +1,23 @@
-#ifndef FACTURA_H
-#define FACTURA_H
+#include <iostream>
+#include<conio.h>
 
-class Factura
-{
+
+using namespace std;
+
+class Factura{
 	public:
-	protected:
+		float Total;
+		char Fecha[];
+		int NumOperacion;
+		Usuario* usuario;
+	private:
+		void verFactura();
+		void ModificarFactura();
+		void CrearFactura();
+	
 };
 
-#endif
+
+
+
+
