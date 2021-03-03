@@ -1,5 +1,6 @@
 #include <iostream>
-#include<conio.h>
+#include <conio.h>
+#include <string.h>
 
 using namespace std;
 
@@ -15,10 +16,10 @@ class Usuario{
 	
 };
 void Usuario::MostrarUser(){
-	cout<<"1. Nombre: "<<NombreUser<<endl;
-	cout<<"2. RUC: "<<Ruc<<endl;
-	cout<<"3. DNI: "<<DNI<<endl;
-	cout<<"4. Celular: "<<Celular<<endl;
+	cout<<"1. Nombre : "<<NombreUser<<endl;
+	cout<<"2. Ruc : "<<Ruc<<endl;
+	cout<<"3. DNI : "<<DNI<<endl;
+	cout<<"4. Celular : "<<Celular<<endl;
 }
 void Usuario::ModificarUser(){
 		int op;
@@ -54,3 +55,5 @@ void Usuario::ModificarUser(){
 			break;
 	}
 }
+
+
