@@ -45,3 +45,4 @@ string Producto::GetNombre(){
 int Producto::GetCod(){
 	return Codigo;
 }
+
