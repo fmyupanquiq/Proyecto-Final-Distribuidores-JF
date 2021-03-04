@@ -49,10 +49,10 @@ void Factura::CrearFactura(int h,Usuario *user){
     char       buf[80];
     tstruct = *localtime(&now);
  
-    strftime(buf, sizeof(buf), "%Y-%m-%d.%X", &tstruct);
+ strftime(buf, sizeof(buf), "%Y-%m-%d.%X", &tstruct);
 		archivo2<<left;
 		archivo2<<setw(37)<<buf<<setw(10)<<"Total : "<<setprecision(5)<<Total<<endl;
-    	archivo2<<usuario->NombreUser<<"DNI: "<<usuario->DNI<<"Celular: "<<usuario->Celular<<"RUC: "<<usuario->Ruc<<endl;
+    	archivo2<<usuario->NombreUser<<" "<<usuario->Celular<<" "<<usuario->DNI<<" "<<usuario->Ruc<<endl;
 		}		
 				archivo2.close();
 				cout<<"Registro Exitoso"<<endl;
