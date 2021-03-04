@@ -1,6 +1,6 @@
-2020 95 CocaCola3L. 55 6Pack
-2019 71 InkaCola3L. 50 6Pack
-2021 65 Fanta3L. 48 6Pack
+2020 71 CocaCola3L. 55 6Pack
+2019 65 InkaCola3L. 50 6Pack
+2021 62 Fanta3L. 48 6Pack
 2022 61 Sprite2L. 36 6Pack
 2023 36 Crush3L. 27.5 6Pack
 2038 97 KR2L. 3.5 6Pack

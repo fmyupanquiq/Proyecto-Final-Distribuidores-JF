@@ -1,8 +1,8 @@
 Cod     Nombre                Precio Cantidad  SubTotal   
 ------------------------------------------------------------------------
-2020    Pepsi2L.              35     3         105        
-2020    Corona355ml.          25     6         150        
-2020    Cusqueña330ml.        23     6         138        
+2020    CocaCola3L.           55     24        1320       
+2019    InkaCola3L.           50     6         300        
+2021    Fanta3L.              48     3         144        
 ------------------------------------------------------------------------
-2021-03-04.08:57:50                  Total :   393
-Nombre del Cliente: Jose    Celular: 968993108    DNI: 70286645    RUC: 356856
+2021-03-04.11:25:50                  Total :   1764
+Nombre del Cliente: jose    Celular: 123123    DNI: 603234    RUC: 123123
