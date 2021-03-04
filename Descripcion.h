@@ -11,8 +11,10 @@ class Descripcion{
 		void producto(Producto *);
 		void ProductoDatos();
 		int getCantidad();
-		void CrearFactura();
-	
+		float GetPrecio();
+		float GetSubTotal();
+		string GetNombre();
+		int GetCod();	
 };
 int Descripcion::getCantidad(){
 	return cantidad;
