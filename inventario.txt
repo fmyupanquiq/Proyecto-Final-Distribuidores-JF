@@ -4,7 +4,7 @@
 2020 61 Sprite2L. 36 6Pack
 2020 36 Crush3L. 27.5 6Pack
 2020 97 KR2L. 3.5 6Pack
-2020 124 Pepsi2L. 35 6Pack
+2020 121 Pepsi2L. 35 6Pack
 2020 157 PilsenCallao310ml. 21 6Pack
-2020 143 Cusqueña330ml. 23 6Pack
-2020 200 Corona355ml. 25 6pack
+2020 137 Cusqueña330ml. 23 6Pack
+2020 194 Corona355ml. 25 6pack
