@@ -9,7 +9,6 @@ class Factura{
 	public:
 		int i=1;
 		float Total;
-		int NumOperacion;
 		Usuario* usuario;
 		Descripcion* Desc[30];
 	public:
