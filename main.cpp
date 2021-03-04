@@ -4,8 +4,9 @@
 #include <iomanip>  // formato de salida 
 #include "Producto.h"
 #include "Usuario.h"
-#include "Factura.h"
 #include "Descripcion.h"
+#include "Factura.h"
+
 using namespace std;
 
 int main(){
@@ -13,7 +14,7 @@ int main(){
 	Descripcion Des[50];
 	Usuario user;
 	Factura Fact;
-	int i=0,h=1,c;
+	int i=0,h=1,c,o;
 	int op;
 		string Nombre;
 		int Stock;
@@ -27,9 +28,7 @@ int main(){
 		i++;
 	archivo>>Codigo>>Stock>>Nombre>>Precio;	
 	getline(archivo,Descripcion);
-	if(Codigo==15){
-			archivo.close();
-	}
+	
 	Pro[i].Codigo=Codigo;
 	Pro[i].Stock=Stock;
 	Pro[i].Descripcion=Descripcion;
@@ -44,7 +43,8 @@ int main(){
 		cout<<"ERROR AL CARGAR LOS DATOS ,VERIFIQUE SU INVENTARIO";
 	}
 
-					cout<<"--------------------------------------------------------------------------------"<<endl;
+	int a=1;
+				cout<<"--------------------------------------------------------------------------------"<<endl;
 				cout<<"---                            Registro de Usuario                           ---"<<endl;
 				cout<<"--------------------------------------------------------------------------------"<<endl;
 	cout<<"Nombre : ";
@@ -56,26 +56,26 @@ int main(){
 	cout<<"Celular : ";
 	cin>>user.Celular;
 
-	int cen,b=1;	
+	int cen,b=1;
 	while(b==1){
 	system("cls");
 	cout<<"--------------------------------------------------------------------------------"<<endl;
-	cout<<"\t\t\t. Modificar Usuario"<<endl;
-	cout<<"\t\t\t2. Ver Productos "<<endl;
-	cout<<"\t\t\t3. Ver Factura"<<endl;
-	cout<<"\t\t\t4. Terminar el proceso "<<endl;	
+	cout<<"\t\t\t\t1. Modificar Usuario"<<endl;
+	cout<<"\t\t\t\t2. Ver Productos "<<endl;
+	cout<<"\t\t\t\t3. Ver Factura"<<endl;
+	cout<<"\t\t\t\t4. Terminar el proceso "<<endl;	
 	cout<<"Selecciones una opcion [1-4]: ";
 	cin>>cen;
-
+	
 	switch(cen){
 		case 1:
-	system("cls");
+			system("cls");
 			user.MostrarUser();
 			cout<<"------------------------------------------------------------------------"<<endl;	
 			user.ModificarUser();
-		break;
+			break;
 		case 2:
-				system("cls");
+					system("cls");
 					cout<<left;
 					cout<<setw(4)<<"N";
 					cout<<setw(8)<<"Cod.";
@@ -90,7 +90,8 @@ int main(){
 		Pro[k].MostrarProducto();
 		cout<<endl;
 	}
-		cout<<"------------------------------------------------------------------------"<<endl;		
+		cout<<"------------------------------------------------------------------------"<<endl;	
+		cout<<"	*Cantidad solo por 3,6,12 y 24 unidades*"<<endl;	
 	cout<<"Que Producto desea : ";
 	cin>>op;
 	if(op>i-1){
@@ -122,9 +123,9 @@ int main(){
 			h++;
 		}
 			}while(c==1);
-		break;
+			break;
 		case 3:
-				if(i!=0){
+		if(i!=0){
 			system("cls");
 					cout<<left;
 					cout<<setw(4)<<"N ";
@@ -139,6 +140,7 @@ int main(){
 						cout<<left<<setw(4)<<r;	
 					Des[r].ProductoDatos();		
 					}
+					cout<<"------------------------------------------------------------------------"<<endl;	
 					system("pause");
 			
 			
@@ -146,11 +148,40 @@ int main(){
 		else{
 			cout<<"Aun no cuenta con productos en la factura "<<endl;
 		}
-		break;
+			break;
 		case 4:
+		for(o=1;o<h;o++){
+			Fact.LeerDetalles(&Des[o]);		
+		}
+		Fact.CrearFactura(h,&user);
+		ofstream archivo3;
+		archivo3.open("inventario.txt");
+		if(archivo3.is_open()){    //retorna falso , en caso de que no exista
+		for(int b=1;b<=i-1;b++){
+			archivo3<<Pro[b].Codigo<<" "<<Pro[b].Stock<<" "<<Pro[b].Nombre<<" "<<Pro[b].Precio<<Pro[b].Descripcion<<endl;
+			}
+
+		archivo3.close();	
+		}
 		
-		break;
+
+		system("cls");
+		cout<<"Registro Exitoso ";
+			return 0;
+			
+			break;
+		
+		
+		
+		
 	}
-	
-	return 0;
+
+	}
+		
+		
 }
+
+	return 0; 
+}
+
+
