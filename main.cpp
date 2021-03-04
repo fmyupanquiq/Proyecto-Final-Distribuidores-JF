@@ -91,7 +91,7 @@ int main(){
 		cout<<endl;
 	}
 		cout<<"------------------------------------------------------------------------"<<endl;	
-		cout<<"	*Cantidades permitidas: 3,6,12 y 24 unidades*"<<endl;	
+		cout<<"	*Cantidad solo por 3,6,12 y 24 unidades*"<<endl;	
 	cout<<"Que Producto desea : ";
 	cin>>op;
 	if(op>i-1){
