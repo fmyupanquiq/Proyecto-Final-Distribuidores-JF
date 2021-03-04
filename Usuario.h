@@ -21,6 +21,7 @@ void Usuario::MostrarUser(){
 	cout<<"3. DNI: "<<DNI<<endl;
 	cout<<"4. Celular: "<<Celular<<endl;
 }
+//comenntario
 void Usuario::ModificarUser(){
 		int op;
 	cout<<"Selecciones una opcion para modificar[0-4]: "<<endl;
