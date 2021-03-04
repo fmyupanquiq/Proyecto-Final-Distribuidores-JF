@@ -16,10 +16,10 @@ class Usuario{
 	
 };
 void Usuario::MostrarUser(){
-	cout<<"1. Nombre : "<<NombreUser<<endl;
-	cout<<"2. Ruc : "<<Ruc<<endl;
-	cout<<"3. DNI : "<<DNI<<endl;
-	cout<<"4. Celular : "<<Celular<<endl;
+	cout<<"1. Nombre: "<<NombreUser<<endl;
+	cout<<"2. Ruc: "<<Ruc<<endl;
+	cout<<"3. DNI: "<<DNI<<endl;
+	cout<<"4. Celular: "<<Celular<<endl;
 }
 void Usuario::ModificarUser(){
 		int op;
@@ -33,25 +33,25 @@ void Usuario::ModificarUser(){
 	switch (op) {
 		case 1:
 			cin.ignore();
-			cout<<"Ingrese el Nombre : ";
+			cout<<"Ingrese el Nombre: ";
 			getline(cin,NombreUser);
 			break;
 		case 2:
-			cout<<"Ingrese el Ruc : ";
+			cout<<"Ingrese el Ruc: ";
 			cin>>Ruc;
 			break;
 		case 3:
 
 			cin.ignore();
-			cout<<"Ingrese el DNI : ";
+			cout<<"Ingrese el DNI: ";
 			cin>>DNI;
 			break;
 		case 4:
-			cout<<"Ingrese el celular : ";
+			cout<<"Ingrese el celular: ";
 			cin>>Celular;
 			break;
 		default:
-			cout<<"opcion invalida ";
+			cout<<"Opcion invalida ";
 			break;
 	}
 }
