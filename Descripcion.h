@@ -33,11 +33,15 @@ void Descripcion::ProductoDatos(){
 	cout<<endl;
 	
 }
-//int Descripcion::getnombre(Producto* po){
-//	return po->GetNombre();
-//}
-void Descripcion::CrearFactura(){
-	
-	
+float Descripcion::GetPrecio(){
+	return Po->GetPrecio();
 }
-
+string Descripcion::GetNombre(){
+	return Po->GetNombre();
+}
+int Descripcion::GetCod(){
+	return Po->GetCod();
+}
+float Descripcion::GetSubTotal(){
+	return SubTotal;
+}
